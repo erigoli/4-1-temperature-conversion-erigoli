@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="temperature_conversion.css">
-    <script src="temperature_conversion.js"></script> 
-  </head>
   <body>
-    <h1>Temperature Conversion</h1>
+    <link rel="stylesheet" href="multiplydivide.css">
+    <script src="multiplydivide.js"></script> 
+    <h1>Jim's arithimetic machine</h1>
     <form>
-      Temperature: <input type="text" id="temperature" /><br>
-      <input type="button" onClick="convertToFahrenheit()" value="C to F" />
-      <input type="button" onClick="convertToCelsius()" value="F to C" />
+      1st Number : <input type="text" id="firstNumber" /><br>
+      2nd Number: <input type="text" id="secondNumber" /><br>
+      <input type="button" onClick="multiplyBy()" Value="Multiply" />
+      <input type="button" onClick="divideBy()" Value="Divide" />
     </form>
-    <p>Result: <br>
-    <span id="result" class="answer"></span>
+    <p>The Result is : <br>
+    <span id = "result" class="answer"></span>
     </p>
+
+    <div id="message"></div>
+    
   </body>
 </html>
